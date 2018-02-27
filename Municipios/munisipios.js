@@ -49,7 +49,7 @@ dijkstra(max,salida);
 //    }
 //}
 
-console.log("source :"+ darNombre(salida) +"\t destination :"+ darNombre(llegada) +"\t MinCost is :"+ distancia[llegada] +"\t");
+alert("source :"+ darNombre(salida) +"\t destination :"+ darNombre(llegada) +"\t MinCost is :"+ distancia[llegada] +"\t");
 
 for(j=1;j<=max ;j++){
 		console.log(paso[j] + " " + pasos[j]);
