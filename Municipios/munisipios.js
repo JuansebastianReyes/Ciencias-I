@@ -1,15 +1,15 @@
 var Gmunicipios = {
     
     vertices : ["1","2","3","4","5","6","7"],
-    
+			//     A   B   C   D   E   F   G
     pesos : [[ 0 ,"1","2","3","4","5","6","7"],
-             ["1", 0 , 2 , 3 , 3 , 2 , 3 , 3 ],
-             ["2", 2 , 0 , 4 , 5 ,999,999,999],
-             ["3", 3 , 4 , 0 ,999, 6 ,999,999],
-             ["4", 3 , 3 ,999, 0 , 5 , 4 , 2 ],
-             ["5", 2 ,999, 6 , 5 , 0 , 4 , 7 ],
-             ["6", 3 ,999,999, 4 , 4 , 0 , 6 ],
-             ["7", 3 ,999,999, 2 , 7 , 6 , 0 ]
+             ["1", 0 , 3 , 2 , 5 ,999,999,999],
+             ["2", 3 , 0 , 4 ,999, 4 , 3 ,999],
+             ["3", 2 , 4 , 0 , 5 ,999,999,999],
+             ["4", 5 ,999, 5 , 0 , 6 ,999, 3 ],
+             ["5",999, 4 ,999, 6 , 0 , 2 , 2 ],
+             ["6",999, 3 ,999,999, 2 , 0 , 2 ],
+             ["7",999,999,999, 3 , 2 , 2 , 0 ]
             ],
     
      nombres : [["1","Cota"],
@@ -22,11 +22,15 @@ var Gmunicipios = {
              ]
 };
 
+//setmap
+
 var max = Gmunicipios.vertices.length;
 var minpos = 1;
 
 var distancia = new Array(max);
 var costo = new Array(max,max);
+var pasos = new Array(10);
+var paso = new Array(10)
 
 salida=prompt('Ingrese el id del municipio de origen:','');
 inicio=darNombre(salida);
@@ -39,11 +43,24 @@ costo = Gmunicipios.pesos;
 dijkstra(max,salida);
 
 
-for(i=1;i<=max;i++){
-    if(i != salida){
-        console.log("source :"+ salida +"\t destination :"+i+"\t MinCost is :"+ distancia[i] +"\t");
-    }
+//for(i=1;i<=max;i++){
+//    if(i != salida){
+//        console.log("source :"+ salida +"\t destination :"+i+"\t MinCost is :"+ distancia[i] +"\t");
+//    }
+//}
+
+console.log("source :"+ darNombre(salida) +"\t destination :"+ darNombre(llegada) +"\t MinCost is :"+ distancia[llegada] +"\t");
+
+for(j=1;j<=max ;j++){
+		console.log(paso[j] + " " + pasos[j]);
 }
+
+//for(i=1;i<=max;i++){
+//	for(j=1;j<=max;j++){
+//		console.log(i +" "+j+" "+costo[i][j]);
+//	}	
+//}
+
 function darNombre(nom){
     for(i=0;i <= max;i++){
         if(nom == Gmunicipios.vertices[i]){
@@ -69,10 +86,14 @@ function dijkstra(nodos,inicio){
                 minpos = k;
             }
         }
+	
         flag[minpos]=1;     
         for(k=1;k<=nodos;k++){
-            if(distancia[minpos] + costo[minpos][k] < distancia[k] && flag[k] != 1)
+            if(distancia[minpos] + costo[minpos][k] < distancia[k] && flag[k] != 1){
                 distancia[k] = distancia[minpos] + costo[minpos][k];
+				pasos[k]=k;
+                paso[k]= minpos;
+            }
         }
      }
 }
