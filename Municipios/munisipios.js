@@ -22,8 +22,21 @@ var Gmunicipios = {
              ]
 };
 
-//setmap
+function ShowSelected(){
+    /* Para obtener el valor */
+    var cod = document.getElementById("entrada");
+    var entrada = cod.value
+    alert(entrada);
+ 
+    /* Para obtener el texto */
+    var combo = document.getElementById("entrada");
+    var selected = combo.options[combo.selectedIndex].text;
+    alert(selected);
+}
 
+ShowSelected();
+
+//setmap
 var max = Gmunicipios.vertices.length;
 var minpos = 1;
 

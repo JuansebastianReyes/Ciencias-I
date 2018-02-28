@@ -4,34 +4,36 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>El primer script</title>
 
-    <script  src="munisipios.js" type="text/javascript"></script>
   </head>
 
   <body>
     <h1>Mucicipios</h1>
 
-    <h4>Seleccione el municipio de salida</h4>
-    <select name="Entrada">
-    	<option value=" " disabled selected>Salida</option>
-  		<option value="1">Cota</option>
-  		<option value="2">Madrid</option>
-  		<option value="3">Chia</option>
-  		<option value="4">Choachi</option>
-  		<option value="5">Bogota</option>
-  		<option value="6">Fomeque</option>
-  		<option value="7">Ubaque</option>
-  	</select>	
+    <form>
+    	<h4>Seleccione el municipio de salida</h4>
+    	<select name="entrada" id="entrada">
+    		<option value=" " disabled selected>Salida</option>
+  			<option value="1">Cota</option>
+  			<option value="2">Madrid</option>
+  			<option value="3">Chia</option>
+  			<option value="4">Choachi</option>
+  			<option value="5">Bogota</option>
+  			<option value="6">Fomeque</option>
+  			<option value="7">Ubaque</option>
+  		</select>	
 
-  	<h4>Seleccione el municipio de llegada</h4>
-    <select name="Salida">
-    	<option value="" disabled selected>Llegada</option>
-  		<option value="1">Cota</option>
-  		<option value="2">Madrid</option>
-  		<option value="3">Chia</option>
-  		<option value="4">Choachi</option>
-  		<option value="5">Bogota</option>
-  		<option value="6">Fomeque</option>
-  		<option value="7">Ubaque</option>	
-	</select>
+  		<h4>Seleccione el municipio de llegada</h4>
+    	<select name="Salida">
+    		<option value="" disabled selected>Llegada</option>
+  			<option value="1">Cota</option>
+  			<option value="2">Madrid</option>
+  			<option value="3">Chia</option>
+  			<option value="4">Choachi</option>
+  			<option value="5">Bogota</option>
+  			<option value="6">Fomeque</option>
+  			<option value="7">Ubaque</option>	
+		</select>
+	</from>
+	<script  src="munisipios.js" type="text/javascript"></script>
   </body>
 </html>
