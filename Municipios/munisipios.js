@@ -22,39 +22,18 @@ var Gmunicipios = {
              ]
 };
 
-function ShowSelected(){
-    /* Para obtener el valor */
-    var cod = document.getElementById("entrada");
-    var entrada = cod.value
-    alert(entrada);
- 
-    /* Para obtener el texto */
-    var combo = document.getElementById("entrada");
-    var selected = combo.options[combo.selectedIndex].text;
-    alert(selected);
-}
-
-ShowSelected();
-
-//setmap
 var max = Gmunicipios.vertices.length;
 var minpos = 1;
 
 var distancia = new Array(max);
 var costo = new Array(max,max);
 var pasos = new Array(10);
-var paso = new Array(10)
+var paso = new Array(10);
 
-salida=prompt('Ingrese el id del municipio de origen:','');
-inicio=darNombre(salida);
-llegada=prompt('Ingrese el id del municipio de llegada:','');
-fin=darNombre(llegada);
-alert("Su puto de salida es "+ inicio);
-alert("Su puto de llegada es " + fin);
+var b = document.getElementById("aceptar");
+b.addEventListener("click", municipios);
 
 costo = Gmunicipios.pesos;
-dijkstra(max,salida);
-
 
 //for(i=1;i<=max;i++){
 //    if(i != salida){
@@ -62,17 +41,28 @@ dijkstra(max,salida);
 //    }
 //}
 
-alert("source :"+ darNombre(salida) +"\t destination :"+ darNombre(llegada) +"\t MinCost is :"+ distancia[llegada] +"\t");
 
-for(j=1;j<=max ;j++){
-		console.log(paso[j] + " " + pasos[j]);
-}
+//for(j=1;j<=max ;j++){
+//		console.log(paso[j] + " " + pasos[j]);
+//}
 
 //for(i=1;i<=max;i++){
 //	for(j=1;j<=max;j++){
 //		console.log(i +" "+j+" "+costo[i][j]);
 //	}	
 //}
+
+function municipios(){
+    /* Para obtener el valor */
+    var cod = document.getElementById("salida");
+    var salida = cod.value
+
+    var cod = document.getElementById("llegada");
+    var llegada = cod.value
+
+    dijkstra(max,salida);
+    console.log("source :"+ darNombre(salida) +"\t destination :"+ darNombre(llegada) +"\t MinCost is :"+ distancia[llegada] +"\t");
+}
 
 function darNombre(nom){
     for(i=0;i <= max;i++){
