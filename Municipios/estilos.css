@@ -1,0 +1,33 @@
+
+/*input {
+    background-color: #1b41c8; /* blue 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}*/
+
+input {
+ 	border: none;
+ 	background: #1b41c8;
+ 	color: #f2f2f2;
+ 	padding: 10px;
+ 	font-size: 18px;
+ 	border-radius: 5px;
+ 	position: relative;
+ 	box-sizing: border-box;
+ 	transition: all 500ms ease;
+}
+
+
+select {
+     background: transparent;
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 250px;
+  }
