@@ -17,6 +17,8 @@ venceras** completar el palíndromo
 
 #Integrantes:
 
-**Juan Sebastian Reyes**      20142020091
-**Daniel  Camargo**     	  20142020094	
-**Alejandro Morales**         20161020541
+"**Juan Sebastian Reyes**      20142020091"
+
+"**Daniel  Camargo**     	   20142020094"	
+
+"**Alejandro Morales**         20161020541"
