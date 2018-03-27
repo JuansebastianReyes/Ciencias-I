@@ -3,7 +3,7 @@
 Repositorio de ejercicios de clases de **Ciencias De La Computación I**
 
 
-## Programa 1: Municipios
+## Programa 1: Municipios **Dijkstra**
 
 En este programa encontramos la solucion al problema del camino mas
 corto entre dos puntos implemestando el algorimo de **dijkstra**
@@ -14,6 +14,11 @@ El programa numero dos se encarga de revisar si al ingrsar palabra
 esta es  palíndromo, si no de lo contratio usando un **divide y 
 venceras** completar el palíndromo
 
+## Programa 3: Municipios **A Estrella**
+
+El programa numero tres se encarga de realizar la busqueda del camino mas 
+corto en un grafo utilizando el algoritmo **A Estrella** y con el verificando
+que es mas optimo que implementar el algoritmo de **dijkstra**
 
 # **Integrantes:**
 
