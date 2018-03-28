@@ -34,6 +34,7 @@ var optimo = null;
 var total = 0;
 var pasos = 0;
 var nodoUno = null;
+var ultimo = 0;
 
 costo = Gmunicipios.pesos;
 
@@ -84,15 +85,6 @@ function asignarNodo(id,val,idVecinos,pesoVecinos){
     this.pesoVecinos = pesoVecinos.filter(Boolean);
 }
 
-//function sumarHeuristica(id,peso){
-//        for(i=0;i <= max;i++){
-//            if(id == Gmunicipios.vertices[i]){
-//                this.peso =this.peso + Gmunicipios.nombres;
-//            }
-//        }
-//    return(peso);
-//}
-
 function verificarVecino(llegada){
     var fin = false;
     for(i=0;i<5;i++){
@@ -101,6 +93,7 @@ function verificarVecino(llegada){
                 heuristicas[i] = nodoUno.pesoVecinos[i] + Gmunicipios.nombres[i][2];
             }
         }else{
+            ultimo = nodoUno.pesoVecinos[i] + Gmunicipios.nombres[i][2];
             fin = true;   
         }
     }
@@ -119,12 +112,12 @@ function aEstrella(inicio,llegada){
     vecinos(inicio);   
     nodoUno = new asignarNodo(salida,pasos+1,idAdyacentes,adyacentes);
     vecino = verificarVecino(llegada);
-    console.log(heuristicas)
+    //console.log(heuristicas)
     if(vecino){
         for(i=0;i<max;i++){
             if(recoridos[i] != this.inicio){
                 heuristicas[i] = 999; 
-                console.log(heuristicas);
+                //console.log(heuristicas);
             }
         }
         var min = Math.min.apply(null, heuristicas);
@@ -132,11 +125,11 @@ function aEstrella(inicio,llegada){
         for(i=0;i<5;i++){
             if(min == heuristicas[i]){
                 optimo = nodoUno.idVecinos[i];
-                console.log(optimo);
+                console.log(darNombre(optimo));
             }
         }
         recoridos[pasos] = inicio;
-        console.log(recoridos);
+        //console.log(recoridos);
         pasos = pasos + 1;
         heuristicas = [];
         nodoUno.idVecinos=[];
@@ -146,6 +139,7 @@ function aEstrella(inicio,llegada){
         total = total + min;
         aEstrella(optimo,llegada);
     }else{
-        console.log("ya");
+        total = total + ultimo;
+        console.log("llegada");
     }
 }
