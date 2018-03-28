@@ -11,14 +11,14 @@ var Gmunicipios = {
              ["6",999, 3 ,999,999, 2 , 0 , 2 ],
              ["7",999,999,999, 3 , 2 , 2 , 0 ]
             ],
-    
-     nombres : [["1","Cota",2],
-                ["2","Madrid",4],
-                ["3","Chia",6],
-                ["4","Choachi",8],
-                ["5","Bogota",10],
+            //    id  nombre   h
+     nombres : [["1","Cota"   ,2 ],
+                ["2","Madrid" ,4 ],
+                ["3","Chia"   ,6 ],
+                ["4","Choachi",8 ],
+                ["5","Bogota" ,10],
                 ["6","Fomeque",12],
-                ["7","Ubaque",14]
+                ["7","Ubaque" ,14]
              ]
 };
 
