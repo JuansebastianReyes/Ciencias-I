@@ -2,6 +2,11 @@
 
 Repositorio de ejercicios de clases de **Ciencias De La Computación I**
 
+# **Integrantes:**
+
+-**Juan Sebastian Reyes**      20142020091  
+-**Daniel  Camargo**     	   20142020094  
+-**Alejandro Morales**         20161020541
 
 ## Programa 1: Municipios **Dijkstra**
 
@@ -20,8 +25,3 @@ El programa numero tres se encarga de realizar la busqueda del camino mas
 corto en un grafo utilizando el algoritmo **A Estrella** y con el verificando
 que es mas optimo que implementar el algoritmo de **dijkstra**
 
-# **Integrantes:**
-
--**Juan Sebastian Reyes**      20142020091  
--**Daniel  Camargo**     	   20142020094  
--**Alejandro Morales**         20161020541
