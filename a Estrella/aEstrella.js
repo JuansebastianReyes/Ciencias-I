@@ -50,10 +50,10 @@ b.addEventListener("click", municipios);
 function municipios(){
     /* Para obtener el valor */
     var cod = document.getElementById("salida");
-    var salida = cod.value
+    var salida = cod.value;
 
-    var cod = document.getElementById("llegada");
-    var llegada = cod.value
+    var codl = document.getElementById("llegada");
+    var llegada = codl.value;
 
     aEstrella(salida,llegada);
 

@@ -25,3 +25,8 @@ El programa numero tres se encarga de realizar la busqueda del camino mas
 corto en un grafo utilizando el algoritmo **A Estrella** y con el verificando
 que es mas optimo que implementar el algoritmo de **dijkstra**
 
+## Programa 4: Busqueda de palabras **Algoritmo BM**
+
+EL programa numero cuatro se encarga de buscar una palabra proporcionada
+por el usuario dentro de un texto y subrayarla al momento de encontrarla.
+Para ello se se va a implementar el algoritmo de busqueda de **Boyer More**
