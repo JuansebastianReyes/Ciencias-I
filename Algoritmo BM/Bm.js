@@ -11,7 +11,7 @@ function leerArchivo(e) {
     var contenido = e.target.result;
     buscar = contenido;
 
-    var stringLocation = boyer_moore_horspool(contenido, 'rise');
+    var stringLocation = boyer_moore_horspool(contenido, 'hermano');
 
     console.log(stringLocation);
     mostrarContenido(contenido);
