@@ -29,4 +29,4 @@ que es mas optimo que implementar el algoritmo de **dijkstra**
 
 EL programa numero cuatro se encarga de buscar una palabra proporcionada
 por el usuario dentro de un texto y subrayarla al momento de encontrarla.
-Para ello se se va a implementar el algoritmo de busqueda de **Boyer More**
+Para ello se se va a implementar el algoritmo de busqueda de **Boyer Moore**
