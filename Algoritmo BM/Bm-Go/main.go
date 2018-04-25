@@ -11,7 +11,7 @@ func main() {
    fileData,err :=ioutil.ReadFile("./textoprueba.txt")
 
    if err != nil {
-     fmt.Println("Hubo error")
+     fmt.Println("Error en el archivo")
    }
 
    fmt.Println(string(fileData))
