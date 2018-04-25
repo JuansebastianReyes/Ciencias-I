@@ -1,20 +1,32 @@
 package main
 
 import (
+		"io/ioutil"
 		"fmt"
 		"unicode/utf8"
 		)
 
 func main() {
+
+   fileData,err :=ioutil.ReadFile("./textoprueba.txt")
+
+   if err != nil {
+     fmt.Println("Hubo error")
+   }
+
+   fmt.Println(string(fileData))
+
    var i int
-   haystack := "el inicio del final"
-   needle := "el"
+   haystack := string(fileData)
+   needle := "hermano"
 
    i = Search(haystack, needle)
 
    fmt.Printf("El patron -> %s\n",needle)
    fmt.Printf("Esta %d\n",i)
-   fmt.Printf("veces en el texto -> %s\n",haystack)
+   fmt.Printf("veces en el texto -> \n")
+   fmt.Printf(haystack)
+
 }
 
 func BuildSkipTable(needle string) map[rune]int {
