@@ -17,16 +17,18 @@ func main() {
 
 
    var i int
+   //haystack := "No quiero decir nada y quiero pedírtelo todo" 
    haystack := string(fileData)
-   needle := "el"
-   
+   needle := "alegre"
+   //needle := "quiero"
+
    fmt.Println("ALGORITMO DE BOYER MOORE")
    fmt.Println("___________________________")
    fmt.Println("Su texto es: ")
    fmt.Println("___________________________")
-   fmt.Println(string(fileData))
+   fmt.Println(haystack)
    fmt.Println("___________________________")
-   fmt.Println("El texto en esperjo es: ")
+   fmt.Println("El texto en espejo es: ")
    fmt.Println("___________________________")
    fmt.Println(Divide(haystack))
    fmt.Println("___________________________")
@@ -94,9 +96,9 @@ loop:
 			}
 		}
 
-		if _, ok := table[hrunes[i+nl-1]]; ok {
+		if _, ok := table[hrunes[i+nl-1]]; ok { 
 			i += table[hrunes[i+nl-1]]
-			pasos = append(pasos,i+2)
+			pasos = append(pasos,i+table[hrunes[i+nl-1]])
 		} else {
 			i += nl
 			pasos = append(pasos,i)
