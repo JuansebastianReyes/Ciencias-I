@@ -19,8 +19,7 @@ func main() {
    var i int
    haystack := string(fileData)
    needle := "el"
-   i = Search(haystack, needle)
-
+   
    fmt.Println("ALGORITMO DE BOYER MOORE")
    fmt.Println("___________________________")
    fmt.Println("Su texto es: ")
