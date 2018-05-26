@@ -43,24 +43,3 @@ for(var i=0;i<=15;i++){
 
 }
 
-
-
-//dibujarNodo(datos.aptos[0][1],datos.aptos[0][2],"green");
-//dibujarNodo(datos.aptos[1][1],datos.aptos[1][2],"green");
-//dibujarNodo(datos.aptos[2][1],datos.aptos[2][2],"green");
-//dibujarNodo(datos.aptos[3][1],datos.aptos[3][2],"green");
-//dibujarNodo(datos.aptos[4][1],datos.aptos[4][2],"blue");
-//dibujarNodo(datos.aptos[5][1],datos.aptos[5][2],"blue");
-//dibujarNodo(datos.aptos[6][1],datos.aptos[6][2],"blue");
-//dibujarNodo(datos.aptos[7][1],datos.aptos[7][2],"blue");
-//dibujarNodo(datos.aptos[8][1],datos.aptos[8][2],"yellow");
-//dibujarNodo(datos.aptos[9][1],datos.aptos[9][2],"yellow");
-//dibujarNodo(datos.aptos[10][1],datos.aptos[10][2],"yellow");
-//dibujarNodo(datos.aptos[11][1],datos.aptos[11][2],"yellow");
-//dibujarNodo(datos.aptos[12][1],datos.aptos[12][2],"purple");
-//dibujarNodo(datos.aptos[13][1],datos.aptos[13][2],"purple");
-//dibujarNodo(datos.aptos[14][1],datos.aptos[14][2],"purple");
-//dibujarNodo(datos.aptos[15][1],datos.aptos[15][2],"purple");
-
-
-
