@@ -17,6 +17,24 @@ var datos ={ //id x y
 			 [4.4,250, 50,"purple"],
 			],
 
+	vecinos : [[1.1,null,1.2,1.3,2.1],
+			   [1.2,null,1.1,1.4,2.2],
+			   [1.3,null,1.2,1.4,2.3],
+			   [1.4,null,1.2,1.3,2.4],
+			   [2.1,1.1,2.2,2.3,3.1],
+			   [2.2,1.2,2.1,2.4,3.2],
+			   [2.3,1.3,2.1,2.4,3.3],
+			   [2.4,1.4,2.2,2.3,3.4],
+			   [3.1,2.1,3.2,3.3,4.1],				
+			   [3.2,2.2,3.1,3.4,4.2],
+			   [3.3,2.3,3.1,3.4,4.3],
+			   [3.4,2.4,3.2,3.3,4.4],
+			   [4.1,3.1,4.2,4.3,null],
+			   [4.2,3.2,4.1,4.4,null],
+			   [4.3,3.3,4.1,4.4,null],
+			   [4.4,3.4,4.2,4.3,null],
+			  ],
+			
 }
 
 var lienzo = document.getElementById("c");
@@ -38,8 +56,25 @@ function dibujarNodo(posX,posY,colorborde){
 }
 
 
-for(var i=0;i<=15;i++){
-		dibujarNodo(datos.aptos[i][1],datos.aptos[i][2],datos.aptos[i][3]);
 
+
+var cola = new Cola();
+var j=0;
+
+for(var i=0;i<=15;i++){
+		cola.add(datos.aptos[i][0]);
 }
+
+console.log(cola.getFrontElement())
+
+while(j <= cola.size()-1){
+	dibujarNodo(datos.aptos[j][1],datos.aptos[j][2],datos.aptos[j][3]);
+	j++;
+}
+
+//for(var i=0;i<cola.size();i++){
+//	dibujarNodo(datos.aptos[i][1],datos.aptos[i][2],datos.aptos[i][3]);
+//}
+
+
 

@@ -13,7 +13,7 @@ function Pila() {
     }
  
     function pop() {
-        return elements.pop();
+            return elements.pop();    
     }
  
     function getTopElement() {
@@ -33,7 +33,7 @@ function Pila() {
     }
 }
 
-function colas() {
+function Cola() {
     var elements = [];
  
     this.add = add;
