@@ -55,7 +55,13 @@ function dibujarNodo(posX,posY,colorborde){
 
 }
 
+function iluminacion(){
 
+}
+
+function luzVecinos(){
+
+}
 
 
 var cola = new Cola();
