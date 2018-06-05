@@ -17,7 +17,25 @@ var datos ={ //id x y
 			 [4.4,250, 50,"purple"],
 			],
 
-	vecinos : [[1.1,null,1.2,1.3,2.1],
+	datosIlu : [[1.1,,,],
+			   [1.2,,,,],
+			   [1.3,,,,],
+			   [1.4,,,,],
+			   [2.1,,,,],
+			   [2.2,,,,],
+			   [2.3,,,,],
+			   [2.4,,,,],
+			   [3.1,,,,],				
+			   [3.2,,,,],
+			   [3.3,,,,],
+			   [3.4,,,,],
+			   [4.1,,,,],
+			   [4.2,,,,],
+			   [4.3,,,,],
+			   [4.4,,,,],
+			  ],
+
+	nodosAd :[[1.1,null,1.2,1.3,2.1],
 			   [1.2,null,1.1,1.4,2.2],
 			   [1.3,null,1.2,1.4,2.3],
 			   [1.4,null,1.2,1.3,2.4],
@@ -55,11 +73,11 @@ function dibujarNodo(posX,posY,colorborde){
 
 }
 
-function iluminacion(){
+function iluminacion(nodo){
 
 }
 
-function luzVecinos(){
+function luzVecinos(nodo){
 
 }
 
