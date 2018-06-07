@@ -81,6 +81,14 @@ function luzVecinos(nodo){
 
 }
 
+function vertices(x1,y1,x2,y2){
+	contexto.beginPath();            
+	contexto.strokeStyle="black";
+	contexto.moveTo(x1,y1);
+	contexto.lineTo(x2,y2);
+	contexto.stroke();
+	contexto.closePath();
+}
 
 var cola = new Cola();
 var j=0;
@@ -96,91 +104,12 @@ while(j <= cola.size()-1){
 	j++;
 }
 
+for(var v=0;v<cola.size()-4;v++){
+	vertices(datos.aptos[v][1],datos.aptos[v][2]-10,datos.aptos[(v+4)][1],datos.aptos[(v+4)][2]+10);
+}
+
 //-------------------------------//
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(150,365);
-contexto.lineTo(150,285);
-contexto.stroke();
-contexto.closePath();
 
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(150,265);
-contexto.lineTo(150,185);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(150,165);
-contexto.lineTo(150, 85);
-contexto.stroke();
-contexto.closePath();
-//-------------------------------//
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(225,390);
-contexto.lineTo(225,310);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(225,290);
-contexto.lineTo(225,210);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(225,190);
-contexto.lineTo(225,110);
-contexto.stroke();
-contexto.closePath();
-//-------------------------------//
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(275,340);
-contexto.lineTo(275,260);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(275,240);
-contexto.lineTo(275,160);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(275,140);
-contexto.lineTo(275, 60);
-contexto.stroke();
-contexto.closePath();
-//------------------------------//
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(350,365);
-contexto.lineTo(350,285);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(350,265);
-contexto.lineTo(350,185);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();            
-contexto.strokeStyle="black";
-contexto.moveTo(350,165);
-contexto.lineTo(350, 85);
-contexto.stroke();
-contexto.closePath();
-//-----------------------------//
 contexto.beginPath();
 contexto.strokeStyle="black";
 contexto.moveTo(215,400);
