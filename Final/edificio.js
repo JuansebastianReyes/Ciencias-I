@@ -1,20 +1,20 @@
 var datos ={ //id x y
-	aptos : [[1.1,250,400,"green" ],
+	aptos : [[1.1,225,400,"green" ],
 			 [1.2,150,375,"green" ],
 			 [1.3,350,375,"green" ],
-			 [1.4,250,350,"green" ],
-			 [2.1,250,300,"blue"  ],
+			 [1.4,275,350,"green" ],
+			 [2.1,225,300,"blue"  ],
 			 [2.2,150,275,"blue"  ],
 			 [2.3,350,275,"blue"  ],
-			 [2.4,250,250,"blue"  ],
-			 [3.1,250,200,"yellow"],
+			 [2.4,275,250,"blue"  ],
+			 [3.1,225,200,"yellow"],
 			 [3.2,150,175,"yellow"],
 			 [3.3,350,175,"yellow"],
-			 [3.4,250,150,"yellow"],
-			 [4.1,250,100,"purple"],
+			 [3.4,275,150,"yellow"],
+			 [4.1,225,100,"purple"],
 			 [4.2,150, 75,"purple"],
 			 [4.3,350, 75,"purple"],
-			 [4.4,250, 50,"purple"],
+			 [4.4,275, 50,"purple"],
 			],
 
 	datosIlu : [[1.1,,,],
@@ -96,9 +96,199 @@ while(j <= cola.size()-1){
 	j++;
 }
 
-//for(var i=0;i<cola.size();i++){
-//	dibujarNodo(datos.aptos[i][1],datos.aptos[i][2],datos.aptos[i][3]);
-//}
+//-------------------------------//
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(150,365);
+contexto.lineTo(150,285);
+contexto.stroke();
+contexto.closePath();
 
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(150,265);
+contexto.lineTo(150,185);
+contexto.stroke();
+contexto.closePath();
 
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(150,165);
+contexto.lineTo(150, 85);
+contexto.stroke();
+contexto.closePath();
+//-------------------------------//
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(225,390);
+contexto.lineTo(225,310);
+contexto.stroke();
+contexto.closePath();
 
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(225,290);
+contexto.lineTo(225,210);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(225,190);
+contexto.lineTo(225,110);
+contexto.stroke();
+contexto.closePath();
+//-------------------------------//
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(275,340);
+contexto.lineTo(275,260);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(275,240);
+contexto.lineTo(275,160);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(275,140);
+contexto.lineTo(275, 60);
+contexto.stroke();
+contexto.closePath();
+//------------------------------//
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(350,365);
+contexto.lineTo(350,285);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(350,265);
+contexto.lineTo(350,185);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();            
+contexto.strokeStyle="black";
+contexto.moveTo(350,165);
+contexto.lineTo(350, 85);
+contexto.stroke();
+contexto.closePath();
+//-----------------------------//
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(215,400);
+contexto.lineTo(160,375);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(215,300);
+contexto.lineTo(160,275);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(215,200);
+contexto.lineTo(160,175);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(215,100);
+contexto.lineTo(160, 75);
+contexto.stroke();
+contexto.closePath();
+//----------------------------//
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(340,375);
+contexto.lineTo(285,350);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(340,275);
+contexto.lineTo(285,250);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(340,175);
+contexto.lineTo(285,150);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(340,75);
+contexto.lineTo(285,50);
+contexto.stroke();
+contexto.closePath();
+//-------------------------//
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(235,400);
+contexto.lineTo(340,375);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(235,300);
+contexto.lineTo(340,275);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(235,200);
+contexto.lineTo(340,175);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(235,100);
+contexto.lineTo(340, 75);
+contexto.stroke();
+contexto.closePath();
+//------------------------//
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(160,375);
+contexto.lineTo(265,350);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(160,275);
+contexto.lineTo(265,250);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(160,175);
+contexto.lineTo(265,150);
+contexto.stroke();
+contexto.closePath();
+
+contexto.beginPath();
+contexto.strokeStyle="black";
+contexto.moveTo(160,75);
+contexto.lineTo(265,50);
+contexto.stroke();
+contexto.closePath();
