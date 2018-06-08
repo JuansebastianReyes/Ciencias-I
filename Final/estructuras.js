@@ -29,7 +29,11 @@ function Pila() {
     }
  
     function size() {
-        return elements.length;
+        try{
+            return elements.length;
+        }catch(err){
+            return "La cadena esta vacia";
+        }
     }
 }
 
@@ -65,7 +69,11 @@ function Cola() {
     }
  
     function size() {
-        return elements.length;
+        try{
+            return elements.length;
+        }catch(err){
+            return "La cadena esta vacia";
+        }
     }
  
     function toString() {

@@ -17,22 +17,22 @@ var datos ={ //id x y
 			 [4.4,275, 50,"purple"],
 			],
 
-	datosIlu : [[1.1,,,],
-			   [1.2,,,,],
-			   [1.3,,,,],
-			   [1.4,,,,],
-			   [2.1,,,,],
-			   [2.2,,,,],
-			   [2.3,,,,],
-			   [2.4,,,,],
-			   [3.1,,,,],				
-			   [3.2,,,,],
-			   [3.3,,,,],
-			   [3.4,,,,],
-			   [4.1,,,,],
-			   [4.2,,,,],
-			   [4.3,,,,],
-			   [4.4,,,,],
+	datosIlu : [[1.1,3200,0.6,0.8,14],
+			   	[1.2,3300,0.4,0.8,14],
+			    [1.3,3400,0.5,0.8,14],
+			    [1.4,3500,0.7,0.8,14],
+			    [2.1,3600,0.5,0.6,14],
+			    [2.2,3500,0.6,0.6,14],
+			    [2.3,3400,0.7,0.6,14],
+			    [2.4,3200,0.6,0.6,14],
+			    [3.1,3500,0.4,0.4,14],				
+			    [3.2,3600,0.5,0.4,14],
+			    [3.3,3400,0.5,0.4,14],
+			    [3.4,3300,0.6,0.4,14],
+			    [4.1,3500,0.3,0.2,14],
+			    [4.2,3200,0.7,0.2,14],
+			    [4.3,3400,0.6,0.2,14],
+			    [4.4,3600,0.4,0.2,14],
 			  ],
 
 	nodosAd :[[1.1,null,1.2,1.3,2.1],
@@ -54,17 +54,18 @@ var datos ={ //id x y
 			  ],
 			
 }
-
+var habitable = new Pila();
+var noHabitable = new Pila();
 var lienzo = document.getElementById("c");
 var contexto = lienzo.getContext("2d");
 
-function dibujarNodo(posX,posY,colorborde){	
+function dibujarNodo(posX,posY,colorborde,estado){	
 					var x = posX;
 					var y = posY;
 					var r = 10;
 					contexto.beginPath();
 					contexto.strokeStyle =colorborde;
-					contexto.fillStyle = "#6ab150";
+					contexto.fillStyle = estado;
 					contexto.lineWidth = 2;
 					contexto.arc(x,y,r,0,2*Math.PI);
 					contexto.fill();					
@@ -74,11 +75,23 @@ function dibujarNodo(posX,posY,colorborde){
 }
 
 function iluminacion(nodo){
+	var iluminacion;
+	var i =0
 
-}
-
-function luzVecinos(nodo){
-
+	while(i<16) {
+		z = datos.datosIlu[i][0];
+		if (nodo == z){
+			iluminacion = ((4)*(datos.datosIlu[i][1])*(datos.datosIlu[i][2])*(datos.datosIlu[i][2]))/datos.datosIlu[i][4]
+			if(iluminacion >= 350 && iluminacion<=450){
+				habitable.add(datos.aptos[i][0]);
+				dibujarNodo(datos.aptos[i][1],datos.aptos[i][2],datos.aptos[i][3],"#6ab150");
+			}else{
+				noHabitable.add(datos.aptos[i][0]);
+				dibujarNodo(datos.aptos[i][1],datos.aptos[i][2],datos.aptos[i][3],"red");
+			}
+		}	
+		i++	
+	}
 }
 
 function vertices(x1,y1,x2,y2){
@@ -97,14 +110,28 @@ for(var i=0;i<=15;i++){
 		cola.add(datos.aptos[i][0]);
 }
 
-console.log(cola.getFrontElement())
 
-while(j <= cola.size()-1){
-	dibujarNodo(datos.aptos[j][1],datos.aptos[j][2],datos.aptos[j][3]);
-	j++;
+
+while(cola.size() != 0){
+	iluminacion(cola.getFrontElement());
+	cola.remove();
 }
 
-for(var v=0;v<cola.size()-4;v++){
+console.log("Las oficinas habilitadas por iluminacion son: ")
+
+while(habitable.size() != 0){
+	console.log(habitable.getTopElement());
+	habitable.pop();
+}
+
+console.log("Las oficinas no habilitadas por iluminacion son: ")
+
+while(noHabitable.size() != 0){
+	console.log(noHabitable.getTopElement());
+	noHabitable.pop();
+}
+
+for(var v=0;v<12;v++){
 	vertices(datos.aptos[v][1],datos.aptos[v][2]-10,datos.aptos[(v+4)][1],datos.aptos[(v+4)][2]+10);
 }
 
