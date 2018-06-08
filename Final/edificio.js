@@ -110,114 +110,29 @@ for(var v=0;v<cola.size()-4;v++){
 
 //-------------------------------//
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(215,400);
-contexto.lineTo(160,375);
-contexto.stroke();
-contexto.closePath();
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(215,300);
-contexto.lineTo(160,275);
-contexto.stroke();
-contexto.closePath();
+vertices(datos.aptos[0 ][1]-10,datos.aptos[0 ][2],datos.aptos[1 ][1]+10,datos.aptos[1 ][2]);
+vertices(datos.aptos[4 ][1]-10,datos.aptos[4 ][2],datos.aptos[5 ][1]+10,datos.aptos[5 ][2]);
+vertices(datos.aptos[8 ][1]-10,datos.aptos[8 ][2],datos.aptos[9 ][1]+10,datos.aptos[9 ][2]);
+vertices(datos.aptos[12][1]-10,datos.aptos[12][2],datos.aptos[13][1]+10,datos.aptos[13][2]);
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(215,200);
-contexto.lineTo(160,175);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(215,100);
-contexto.lineTo(160, 75);
-contexto.stroke();
-contexto.closePath();
 //----------------------------//
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(340,375);
-contexto.lineTo(285,350);
-contexto.stroke();
-contexto.closePath();
+vertices(datos.aptos[2 ][1]-10,datos.aptos[2 ][2],datos.aptos[3 ][1]+10,datos.aptos[3 ][2]);
+vertices(datos.aptos[6 ][1]-10,datos.aptos[6 ][2],datos.aptos[7 ][1]+10,datos.aptos[7 ][2]);
+vertices(datos.aptos[10][1]-10,datos.aptos[10][2],datos.aptos[11][1]+10,datos.aptos[11][2]);
+vertices(datos.aptos[14][1]-10,datos.aptos[14][2],datos.aptos[15][1]+10,datos.aptos[15][2]);
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(340,275);
-contexto.lineTo(285,250);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(340,175);
-contexto.lineTo(285,150);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(340,75);
-contexto.lineTo(285,50);
-contexto.stroke();
-contexto.closePath();
 //-------------------------//
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(235,400);
-contexto.lineTo(340,375);
-contexto.stroke();
-contexto.closePath();
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(235,300);
-contexto.lineTo(340,275);
-contexto.stroke();
-contexto.closePath();
+vertices(datos.aptos[0 ][1]+10,datos.aptos[0 ][2],datos.aptos[2 ][1]-10,datos.aptos[2 ][2]);
+vertices(datos.aptos[4 ][1]+10,datos.aptos[4 ][2],datos.aptos[6 ][1]-10,datos.aptos[6 ][2]);
+vertices(datos.aptos[8 ][1]+10,datos.aptos[8 ][2],datos.aptos[10][1]-10,datos.aptos[10][2]);
+vertices(datos.aptos[12][1]+10,datos.aptos[12][2],datos.aptos[14][1]-10,datos.aptos[14][2]);
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(235,200);
-contexto.lineTo(340,175);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(235,100);
-contexto.lineTo(340, 75);
-contexto.stroke();
-contexto.closePath();
 //------------------------//
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(160,375);
-contexto.lineTo(265,350);
-contexto.stroke();
-contexto.closePath();
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(160,275);
-contexto.lineTo(265,250);
-contexto.stroke();
-contexto.closePath();
 
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(160,175);
-contexto.lineTo(265,150);
-contexto.stroke();
-contexto.closePath();
-
-contexto.beginPath();
-contexto.strokeStyle="black";
-contexto.moveTo(160,75);
-contexto.lineTo(265,50);
-contexto.stroke();
-contexto.closePath();
+vertices(datos.aptos[1 ][1]+10,datos.aptos[1 ][2],datos.aptos[3 ][1]-10,datos.aptos[3 ][2]);
+vertices(datos.aptos[5 ][1]+10,datos.aptos[5 ][2],datos.aptos[7 ][1]-10,datos.aptos[7 ][2]);
+vertices(datos.aptos[9 ][1]+10,datos.aptos[9 ][2],datos.aptos[11][1]-10,datos.aptos[11][2]);
+vertices(datos.aptos[13][1]+10,datos.aptos[13][2],datos.aptos[15][1]-10,datos.aptos[15][2]);
